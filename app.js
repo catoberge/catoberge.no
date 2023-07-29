@@ -23,14 +23,14 @@ const selectedIndex = null;
 
 imageIndexes.forEach((i) => {
     const image = document.createElement("img");
-    image.src = `/assets/images/${i}.jpg`;
+    image.src = `/img/${i}.jpg`;
     image.alt = `Bilde ${i} av mitt galleri`;
     image.classList.add("galleryImg");
 
     image.addEventListener("click", () => {
         // popup
         popup.style.transform = `translateY(0)`;
-        selectedImage.src = `assets/images/${i}.jpg`;
+        selectedImage.src = `img/${i}.jpg`;
         selectedImage.alt = `Bilde ${i} av mitt galleri`;
 
     });
