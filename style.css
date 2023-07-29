@@ -4,15 +4,27 @@
     font-family: "Kanit", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Navbar */
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
+    background-color: white;
+    /* Add a background color to make it visible */
+    z-index: 999;
+    /* Add a high z-index to ensure it stays on top of other elements */
 }
 
 
@@ -76,7 +88,7 @@ header {
     max-width: 920px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
+    margin-top: 130px;
     /* background-color: rgb(255, 244, 230); */
     border-radius: 5px;
     box-shadow: 5px 5px black;
@@ -216,5 +228,8 @@ header {
 
     .nav-menu.active {
         display: block;
+        background-color: white;
+        opacity: 0.98;
+        height: 25%;
     }
 }
