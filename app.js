@@ -23,7 +23,7 @@ const selectedIndex = null;
 
 imageIndexes.forEach((i) => {
     const image = document.createElement("img");
-    image.src = `/img/${i}.jpg`;
+    image.src = `img/${i}.jpg`;
     image.alt = `Bilde ${i} av mitt galleri`;
     image.classList.add("galleryImg");
 
