@@ -30,7 +30,7 @@ imageIndexes.forEach((i) => {
     image.addEventListener("click", () => {
         // popup
         popup.style.transform = `translateY(0)`;
-        selectedImage.src = `/Image gallery/img/${i}.jpg`;
+        selectedImage.src = `images/${i}.jpg`;
         selectedImage.alt = `Bilde ${i} av mitt galleri`;
 
     });
